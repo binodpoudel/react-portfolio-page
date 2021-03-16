@@ -1,0 +1,3 @@
+
+
+mongodb+srv://learn-database:<password>@cluster0.thbtp.mongodb.net/<dbname>?retryWrites=true&w=majority
