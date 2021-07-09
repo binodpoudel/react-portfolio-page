@@ -4,12 +4,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import { Home, About, Contact, Project, NavBar, Skills, Footer } from './components/index';
 import './style/index.css'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
   return (
    
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
      <Switch>
       <Route exact path='/' component={Home} />
@@ -20,7 +20,7 @@ function App() {
       <Redirect to= '/' />
      </Switch> 
     <Footer /> 
-  </BrowserRouter> 
+  </HashRouter> 
    
   );
 }
